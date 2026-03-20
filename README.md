@@ -10,12 +10,6 @@ Command-line interface for [Reela](https://reela.com) — create AI-powered vide
 curl -fsSL https://raw.githubusercontent.com/reelanything/reela-cli/main/install.sh | bash
 ```
 
-### Install with AI Agent
-
-Tell your agent:
-
-> Follow https://github.com/reelanything/reela-cli/blob/main/INSTALL.md to install Reela CLI and skills.
-
 ### Manual Install
 
 1. Download the archive for your platform from the [latest release](https://github.com/reelanything/reela-cli/releases/latest)
