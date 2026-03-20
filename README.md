@@ -4,27 +4,27 @@ Command-line interface for [Reela](https://reela.com) — create AI-powered vide
 
 ## Installation
 
-### Quick Install (Linux / macOS)
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/reelanything/reela-cli/main/install.sh | bash
-```
-
 ### Install with AI Agent
 
 Tell your agent:
 
 > Follow https://github.com/reelanything/reela-cli/blob/main/INSTALL.md to install Reela CLI and skills.
 
-### Manual Install
+### Manual Install (Linux / macOS)
 
-1. Download the archive for your platform from the [latest release](https://github.com/reelanything/reela-cli/releases/latest)
-2. Extract the `reela` binary
-3. Move it to a directory in your `PATH` (e.g., `~/.local/bin/`)
+```sh
+curl -fsSL https://raw.githubusercontent.com/reelanything/reela-cli/main/install.sh | bash
+```
 
 ### Windows
 
 Download the `.zip` archive from the [latest release](https://github.com/reelanything/reela-cli/releases/latest), extract `reela.exe`, and add its location to your `PATH`.
+
+### Install skills
+
+```sh
+npx skills add https://github.com/reelanything/reela-cli -g
+```
 
 ## Quick Start
 
@@ -44,15 +44,15 @@ reela tasks
 
 ## Commands
 
-| Command  | Description                        |
-|----------|------------------------------------|
+| Command  | Description                          |
+| -------- | ------------------------------------ |
 | `login`  | Authenticate with your Reela account |
-| `logout` | Remove stored credentials          |
-| `whoami` | Show current authenticated user    |
-| `create` | Create a new video                 |
-| `status` | Check status of recent tasks       |
-| `tasks`  | List all tasks                     |
-| `config` | Manage CLI configuration           |
+| `logout` | Remove stored credentials            |
+| `whoami` | Show current authenticated user      |
+| `create` | Create a new video                   |
+| `status` | Check status of recent tasks         |
+| `tasks`  | List all tasks                       |
+| `config` | Manage CLI configuration             |
 
 ## Configuration
 
