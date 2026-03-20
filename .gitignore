@@ -2,6 +2,7 @@
 .DS_Store
 Thumbs.db
 .claude
+.agents
 
 # Editors / IDEs
 .idea/
