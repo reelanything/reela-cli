@@ -16,7 +16,7 @@
 | `--tier`            | enum     | pro       | Quality tier (see reela-tiers skill) |
 | `--avatar`          | string[] | []        | Avatar ID(s) for digital human       |
 | `--file`            | string[] | []        | Attach file with role (ROLE:PATH)    |
-| `--download`        | string   | —         | One-time download dir override       |
+| `--download`        | string   | —         | ⚠️ Post-MVP, accepted but not yet wired |
 | `--dry-run`         | bool     | false     | Validate without creating            |
 | `--session`         | string   | auto      | Session name for collection grouping (default: {hostname}-{username}-{YYYY-MM-DD}) |
 | `--idempotency-key` | string   | —         | Prevent duplicate creation           |
@@ -38,11 +38,11 @@ The `--file` flag attaches media files with a specific role. Format: `--file ROL
 
 | Role              | Description                               | Formats        |
 | ----------------- | ----------------------------------------- | -------------- |
-| `video-source`    | Video clip (visual only, audio muted)     | mp4, mov, webm |
+| `video-source`    | Video clip (visual only, audio muted)     | mp4, mov       |
 | `video-audio`     | Video (preserve audio-visual sync)        | mp4, mov       |
 | `reference-image` | Reference image (style/composition guide) | jpg, png, webp |
 | `original-image`  | Source image (for image-to-video)         | jpg, png, webp |
-| `background-music` | Background music track                   | mp3, wav, aac  |
+| `background-music` | Background music track                   | mp3, wav       |
 
 ## Session & Collection Grouping
 

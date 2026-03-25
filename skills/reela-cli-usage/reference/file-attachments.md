@@ -10,11 +10,11 @@ Attach your own media (images, videos, music) as source material for video creat
 
 | Role              | Description                               | Formats        |
 | ----------------- | ----------------------------------------- | -------------- |
-| `video-source`    | Video clip (visual only, audio muted)     | mp4, mov, webm |
+| `video-source`    | Video clip (visual only, audio muted)     | mp4, mov       |
 | `video-audio`     | Video (preserve audio-visual sync)        | mp4, mov       |
 | `reference-image` | Reference image (style/composition guide) | jpg, png, webp |
 | `original-image`  | Source image (for image-to-video)         | jpg, png, webp |
-| `background-music` | Background music track                   | mp3, wav, aac  |
+| `background-music` | Background music track                   | mp3, wav       |
 
 ## Examples
 
