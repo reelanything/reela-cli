@@ -49,7 +49,6 @@ The `--file` flag attaches media files with a specific role. Format: `--file ROL
 Videos created with the same `--session` name share a collection. The session-to-collection mapping is stored locally at `~/.config/reela/sessions.json`.
 
 - Default session: `{hostname}-{username}-{YYYY-MM-DD}` (daily rotation)
-- Override: `REELA_COLLECTION_ID` env var bypasses session logic entirely
 
 ## Usage Examples
 

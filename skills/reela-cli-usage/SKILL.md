@@ -50,7 +50,7 @@ If `reela` is not installed or you need to update, follow the install guide:
 
 ## Environment Variables
 
-`REELA_PROFILE`, `REELA_API_BASE`, `REELA_OUTPUT`, `REELA_COLLECTION_ID`, `RUST_LOG` (daemon log level)
+`REELA_PROFILE`, `REELA_API_BASE`, `REELA_OUTPUT`, `RUST_LOG` (daemon log level)
 
 ## File System Locations
 
