@@ -16,10 +16,6 @@ Tell your agent:
 curl -fsSL https://raw.githubusercontent.com/reelanything/reela-cli/main/install.sh | bash
 ```
 
-### Windows
-
-Download the `.zip` archive from the [latest release](https://github.com/reelanything/reela-cli/releases/latest), extract `reela.exe`, and add its location to your `PATH`.
-
 ### Install skills
 
 ```sh
