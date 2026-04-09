@@ -94,10 +94,10 @@ main() {
   curl -fsSL "$checksum_url" -o "$tmpdir/SHA256SUMS"
   (
     cd "$tmpdir" && grep "$archive_name" SHA256SUMS |
-      if command -v sha256sum >/dev/null 2>&1; then
-        sha256sum -c --quiet
-      else
+      if [ "$(uname -s)" = "Darwin" ]; then
         shasum -a 256 -c --quiet
+      else
+        sha256sum -c --quiet
       fi
   ) || die "Checksum verification failed"
 
