@@ -20,7 +20,7 @@ Run `reela -h` or `reela <command> -h` to see available commands and flags. The 
 
 If `reela` is not installed or you need to update, follow the install guide:
 
-> https://github.com/reelanything/reela-cli/blob/main/INSTALL.md
+> https://github.com/reela-ai/reela-cli/blob/main/INSTALL.md
 
 ## Task Status Codes
 

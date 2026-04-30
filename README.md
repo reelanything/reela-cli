@@ -8,18 +8,18 @@ Command-line interface for [Reela](https://reela.com) — create AI-powered vide
 
 Tell your agent:
 
-> Follow https://github.com/reelanything/reela-cli/blob/main/INSTALL.md to install Reela CLI and skills.
+> Follow <https://github.com/reela-ai/reela-cli/blob/main/INSTALL.md> to install Reela CLI and skills.
 
 ### Manual Install (Linux / macOS)
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/reelanything/reela-cli/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/reela-ai/reela-cli/main/install.sh | bash
 ```
 
 ### Install skills
 
 ```sh
-npx skills add https://github.com/reelanything/reela-cli -g
+npx skills add https://github.com/reela-ai/reela-cli -g
 ```
 
 ## Quick Start
@@ -56,11 +56,10 @@ Configuration is stored in `~/.reela/`. Profiles isolate API base URL, credentia
 
 ```sh
 reela config profiles list
-reela config profiles create staging --api-base https://staging-cli-api.reela.com
-reela --profile staging login
-reela config profiles use staging
+reela config profiles create <profile-name>
+reela --profile <profile-name> login
+reela config profiles use <profile-name>
 reela config profiles show
-reela --profile work logout
 ```
 
 Use `--profile <name>` or `REELA_PROFILE=<name>` for one-off commands, or `reela config profiles use <name>` to set the active profile.
