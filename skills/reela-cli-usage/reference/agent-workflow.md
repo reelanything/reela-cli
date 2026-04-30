@@ -48,6 +48,8 @@ When the user provides files, decide the `--file` role. See [file-attachments.md
 
 Use defaults for anything the user didn't specify. Only ask when truly ambiguous. See [create-params.md](./create-params.md) for visual combinations.
 
+**Music-video guardrail:** Only add `--music-video` when the user explicitly requests an MV, music video, AI-generated song/music track, or song-led video. Do not use it for ordinary background music; instead, leave the flag unset and mention the desired music mood/style in the prompt.
+
 ### Step 4: Dry-Run → Confirm → Submit
 
 **Never submit a task directly.** Always follow this sequence:
@@ -89,4 +91,13 @@ Agent pre-processing: transcribe lyrics → embed in mp3 metadata.
 reela create "City Pop MV" --visual ai-video \
   --file background-music:./song_with_lyrics.mp3 \
   --duration 180 --layout portrait --dry-run
+```
+
+### AI-generated MV / music video
+
+Use `--music-video` only because the request is explicitly for an AI-generated MV/music video.
+
+```bash
+reela create "Create an AI-generated synthwave music video about a night drive" --visual ai-video \
+  --music-video --duration 60 --layout portrait --dry-run
 ```

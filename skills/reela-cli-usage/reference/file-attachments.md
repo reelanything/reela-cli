@@ -23,7 +23,7 @@ Default to `reference-image` — better quality, more useful. Only use `original
 
 ### Audio Files — MV Creation Only
 
-Audio attachments are exclusively for MV creation (`background-music` role).
+Audio attachments are exclusively for MV creation (`background-music` role). Do not use audio attachments, `background-music`, or `--music-video` for ordinary background music on a normal video.
 
 ## MV: Lyrics Requirement
 
