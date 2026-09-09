@@ -1,7 +1,7 @@
 ---
 title: Reela Shows
 description: Download Shows and manage episode files.
-version: 1.22.3
+version: 1.22.4
 ---
 
 # Reela Shows

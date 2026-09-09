@@ -1,7 +1,7 @@
 ---
 title: Reela Create
 description: Create videos with prompts, source files, avatars, and common options.
-version: 1.22.3
+version: 1.22.4
 ---
 
 # Reela Create
