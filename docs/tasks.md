@@ -8,6 +8,28 @@ version: 1.22.2
 
 Run `reela tasks -h` or `reela tasks <subcommand> -h` for current options.
 
+## List videos in the active collection
+
+```bash
+reela collection list
+reela collection list --session "Spring product launch"
+reela collection list --output json
+reela collection list --output table
+```
+
+Lists video IDs, status, full titles, descriptions, and download URLs, newest first.
+Download URLs are available for completed videos and expire after one hour.
+Missing metadata is shown as `-` in text output and `null` in JSON.
+
+Collection selection follows `create`: a non-blank `REELA_COLLECTION_ID` takes
+priority over `--session`; otherwise the session is looked up in the current
+profile. Without `--session`, the default is `reela-YYYY-MM-DD` using the local
+date, not the most recently used session. Use `--profile` to select another profile.
+
+This command never creates a collection. A missing active collection produces an
+error with guidance; an existing empty collection returns an empty video list.
+Run `reela collection list -h` for options.
+
 ## List tasks
 
 ```bash
