@@ -1,7 +1,7 @@
 ---
 title: Reela Config
 description: Manage profiles, downloads, notifications, and delivery settings.
-version: 1.22.2
+version: 1.22.3
 ---
 
 # Reela Config

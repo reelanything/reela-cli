@@ -1,7 +1,7 @@
 ---
 title: Reela Tasks
 description: List, inspect, and download generated videos.
-version: 1.22.2
+version: 1.22.3
 ---
 
 # Reela Tasks
@@ -46,6 +46,21 @@ Available status filters include `pending`, `processing`, `failed`, `completed`,
 reela tasks get <task-id>
 reela --output json tasks get <task-id>
 ```
+
+Shows ID, status, progress, and prompt, plus the complete saved creation parameters:
+
+- `content`: prompt and video configuration (`spec`), including duration, layout,
+  pipeline tier/visual/music settings, and avatars.
+- `reference`: reference inputs, including uploaded file metadata and webpage metadata.
+
+Text output prints both objects as formatted JSON. With `--output json`, they are
+returned as `content` and `reference` alongside `id`, `status`, `progress`, and
+`prompt`. Missing objects are `null`.
+
+These are the server's saved values, not the original CLI arguments: layout and
+visual values use internal identifiers, and uploaded inputs contain stored
+metadata rather than local file paths. The output is not a replayable `create`
+request.
 
 ## Download a finished video
 
